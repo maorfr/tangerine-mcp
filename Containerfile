@@ -7,4 +7,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY tangerine_mcp_server.py ./
 
-CMD ["python", "tangerine_mcp_server.py"] 
+CMD ["python", "tangerine_mcp_server.py"]
