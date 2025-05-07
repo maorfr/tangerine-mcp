@@ -1,4 +1,4 @@
-# ocm-mcp
+# tangerine-mcp
 
 MCP server for Tangerine (Convo AI assistant backend): https://github.com/RedHatInsights/tangerine-backend
 
