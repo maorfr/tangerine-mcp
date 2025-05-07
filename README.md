@@ -11,7 +11,7 @@ Example configuration for running with Podman:
 ```json
 {
   "mcpServers": {
-    "tangerine-mcp": {
+    "ai-assistant": {
       "command": "podman",
       "args": [
         "run",
