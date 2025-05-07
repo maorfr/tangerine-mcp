@@ -17,11 +17,11 @@ Example configuration for running with Podman:
         "run",
         "-i",
         "--rm",
-        "-e", "OC_TOKEN",
+        "-e", "TANGERINE_TOKEN",
         "quay.io/maorfr/tangerine-mcp"
       ],
       "env": {
-        "OC_TOKEN": "REDACTED"
+        "TANGERINE_TOKEN": "REDACTED"
       }
     }
   }
