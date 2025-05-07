@@ -32,25 +32,19 @@ async def make_request(
             return None
 
 
-async def query(
-    assistant_id: int, query_text: str, interaction_id: str
-) -> str:
+async def query(assistant_id: int, query_text: str, interaction_id: str) -> str:
     query_url = TANGERINE_API_BASE.format(assistant_id=assistant_id)
     return await make_request(query_url, query_text, interaction_id)
 
 
 @mcp.tool()
-async def managed_openshift(
-    query_text: str, interaction_id: str
-) -> str:
+async def managed_openshift(query_text: str, interaction_id: str) -> str:
     """Query the managed-openshift assistant (ID: 15)."""
     return await query(15, query_text, interaction_id)
 
 
 @mcp.tool()
-async def app_interface(
-    query_text: str, interaction_id: str
-) -> str:
+async def app_interface(query_text: str, interaction_id: str) -> str:
     """Query the app-sre-app-interface assistant (ID: 17)."""
     return await query(17, query_text, interaction_id)
 
