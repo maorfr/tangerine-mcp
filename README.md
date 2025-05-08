@@ -18,7 +18,7 @@ Example configuration for running with Podman:
         "-i",
         "--rm",
         "-e", "TANGERINE_TOKEN",
-        "quay.io/maorfr/tangerine-mcp"
+        "quay.io/redhat-services-prod/hcm-eng-prod-tenant/tangerine-mcp"
       ],
       "env": {
         "TANGERINE_TOKEN": "REDACTED"
