@@ -5,7 +5,7 @@ from mcp.server.fastmcp import FastMCP
 
 mcp = FastMCP("tangerine")
 
-TANGERINE_API_BASE = "https://tangerine.devshift.net/api/assistants/{assistant_id}/chat"
+TANGERINE_API_BASE = "https://tangerine.devshift.net/api/assistants/{assistant_id}/search"
 
 
 async def make_request(
