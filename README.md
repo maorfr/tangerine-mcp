@@ -18,10 +18,12 @@ Example configuration for running with Podman:
         "-i",
         "--rm",
         "-e", "TANGERINE_TOKEN",
-        "quay.io/maorfr/tangerine-mcp"
+        "-e", "MCP_TRANSPORT",
+        "quay.io/maorfr/tangerine-mcp:latest"
       ],
       "env": {
-        "TANGERINE_TOKEN": "REDACTED"
+        "TANGERINE_TOKEN": "REDACTED",
+        "MCP_TRANSPORT": "stdio"
       }
     }
   }
