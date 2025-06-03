@@ -11,17 +11,19 @@ Example configuration for running with Podman:
 ```json
 {
   "mcpServers": {
-    "ai-assistant": {
+    "tangerine": {
       "command": "podman",
       "args": [
         "run",
         "-i",
         "--rm",
+        "-e", "TANGERINE_URL",
         "-e", "TANGERINE_TOKEN",
         "-e", "MCP_TRANSPORT",
         "quay.io/maorfr/tangerine-mcp:latest"
       ],
       "env": {
+        "TANGERINE_URL": "https://tangerine.example.com",
         "TANGERINE_TOKEN": "REDACTED",
         "MCP_TRANSPORT": "stdio"
       }
